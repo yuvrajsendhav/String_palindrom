@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Event</title>
+</head>
+<body>
+    <input type="text" name="text" id="yuvi">
+    <input type="text" name="text1" id="yuma">
+    <input onclick="palindrom()" type="button" name="bt" value="CLICK">
+</body>
+<script>
+    function palindrom()
+    {
+        x=document.getElementById("yuvi").value;
+        ch="";
+        len=x.length;
+        for (i = len; i>=0; i--)
+         {
+          ch=ch+x.charAt(i);
+
+        }
+        if (x==ch) 
+        {
+            document.getElementById("yuma").value=x+" is palindrom";
+        }
+        else
+        {
+            document.getElementById("yuma").value=x+" is not palindrom";
+        }
+    }
+</script>
+</html>
